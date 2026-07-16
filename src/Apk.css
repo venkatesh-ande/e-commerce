@@ -1,0 +1,21 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: crnter;
+  gap: 30px;
+ margin: 50px 0  ;
+}
+
+.main > button{
+ background-color: red;
+ height: 70px;
+ width: 70px;
+ color: white;
+ font-size: 50px;
+ border-radius: 35px;
+ border: none;
+ 
+}
+.main >span{
+  font-size: 40px;
+}

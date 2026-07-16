@@ -1,0 +1,14 @@
+import notfound from "../images/notfound.jpeg"
+
+export default function NoData(){
+return(
+    <>
+       <div className="no-data-div">
+         <div>
+           <img src={notfound}/>
+      <p> <strong>No Items In Selected Catagory</strong></p>   
+          </div>
+       </div>
+    </>)
+  
+}
