@@ -2,7 +2,7 @@
 
 export default function Main(props){
   const addToCart = (productId) => {
-    alert(`Button pressed for product ID: ${productId}`);}
+    alert(`${productId}  Added to cart`);}
   
   return(
 
@@ -21,7 +21,7 @@ export default function Main(props){
         
         ></div>
         <div>
-          <button className="cart-button" onClick={() => addToCart(props.price)}>Add to Cart</button>
+          <button className="cart-button" onClick={() => addToCart(props.product)}>Add to Cart</button>
           <button className="buy-button">Buy Now</button>
         </div>
       </div>
