@@ -49,7 +49,9 @@ export default function Data({ activeCatagory, setCart, cart, content }) {
         />
       ))
     ) : (
-      <h2>No Items In Cart</h2>
+      
+        <h2>No Items In Cart</h2>
+      
     );
   }
 

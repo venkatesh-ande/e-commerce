@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import icon from "../images/user.jpeg"
 import cartIcon from "../images/cartIcon.jpeg"
+import cartIcon2 from "../images/inCart.jpeg"
 import data from "./data.jsx"
 import Data from "./maincontent.jsx" 
 import Main from "../Apk.jsx"
@@ -41,17 +42,18 @@ export default function Header() {
           <input type="search" placeholder="Search" />
 
         
-          <button 
-          className="cartButton"
-          onClick={() => setContent(content ==="All" ? "cart" : "All")} >
+        
             <img 
-             src={cartIcon}
+            className= "cartButton"
+            onClick={() => setContent(content ==="All" ? "cart" : "All")}
+            src={ content==="All" ? cartIcon :cartIcon2}
             alt="Cart" />
             <span>{cart.length}</span>
-            </button>
+            
                     
         
         </div>
+        
       </header>
      <Data 
      activeCatagory={activeCatagory}  

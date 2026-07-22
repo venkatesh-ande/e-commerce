@@ -8,6 +8,8 @@ button ,p,span ,h1 {
   font-family: inter;
 }
 
+
+
 .header-container {
   color: whitesmoke;
   display: flex;
@@ -23,7 +25,7 @@ button ,p,span ,h1 {
   border-radius: 30px;
   margin-right: 30px;
 }
-.cartButton >img {
+.cartButton {
   width: 60px;
   background-color: white;
   border: none;
@@ -37,17 +39,22 @@ button ,p,span ,h1 {
   right: 3%;
   top: 20%;
 }
-.cartButton >span {
+
+
+
+.search >span {
   position: absolute;
-  top: 2px;
-  right: 1px;
+  top: 15px;
+  right: 15px;
   background-color: red;
   color: white;
   font-size: 20px;
   font-weight: 700;
-  padding: 5px;
-  width: 20px;
+  padding: 5px 10px;
+  height: 25px;
+
   border-radius: 50%;
+
 }
 
 
