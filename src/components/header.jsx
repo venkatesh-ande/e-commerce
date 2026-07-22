@@ -1,23 +1,24 @@
 import React from "react"
 import { useState } from "react"
 import icon from "../images/user.jpeg"
+import cartIcon from "../images/cartIcon.jpeg"
 import data from "./data.jsx"
 import Data from "./maincontent.jsx" 
+import Main from "../Apk.jsx"
+
 
 export default function Header() {
   const [activeCatagory, setActiveCatagory] = useState("All");
-  
-  
-
+  const [content, setContent] = useState("All");
+  const [cart , setCart] =React.useState([]);
   
   return (
     <>
-
-
       <header>
         <div className="header-container">
           <button className="menu-button">☰</button>
           <h1>V-Cart</h1>
+
           
           <img src={icon} alt="user icon" />
         </div>
@@ -38,9 +39,26 @@ export default function Header() {
 
         <div className="search">
           <input type="search" placeholder="Search" />
+
+        
+          <button 
+          className="cartButton"
+          onClick={() => setContent(content ==="All" ? "cart" : "All")} >
+            <img 
+             src={cartIcon}
+            alt="Cart" />
+            <span>{cart.length}</span>
+            </button>
+                    
+        
         </div>
       </header>
-     <Data activeCatagory={activeCatagory} />  
+     <Data 
+     activeCatagory={activeCatagory}  
+     cart={cart}
+     setCart={setCart}
+     content={content}
+     />  
 
 
     
